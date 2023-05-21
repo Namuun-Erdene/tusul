@@ -56,7 +56,6 @@ h2{
 
 .container{
     width: 100%;
-    margin: 80px auto;
 }
 .container h2{
     padding: 50px;
@@ -106,6 +105,9 @@ h2{
     .tab-links.active-link::after{
         width: 20%;
     }
+    .container{
+        width: 100%;
+    }
     .text1{
         width: auto;
     }
@@ -122,6 +124,7 @@ h2{
     }
     .video-player{
         float: left;
+        width: 500px;
     } 
     p{
         font-size: 20px;
