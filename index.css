@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(img/back.png);
+    background-size: 105%;
+    height: 100vh;
+    font-family: 'New Rocker', cursive;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'New Rocker', cursive;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 40px;
+}
+.text1{
+    width: 75%;
+    font-family:'Times New Roman', Times, serif;
+}
+.text2{
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(img/gahai.jpeg);
+    height: 93vh;
+}
+.text3{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(img/contact.jpeg);
+    background-size: 100%;
+    height: 65vh;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zurag {
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.btn{
+    background-color: #ff0000;
+    color: white;
+    border-radius: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'New Rocker', cursive;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+#hashira{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#hashira1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#hashira2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#playbtn {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+/*Media*/
+@media only screen and  (min-width: 280px) and (max-width: 991px){
+    .tab-links.active-link::after{
+        width: 20%;
+    }
+    .text1{
+        width: auto;
+    }
+    .text3{
+        display: block;
+        justify-content: space-evenly;
+        background-image: url(img/contact.jpeg);
+        background-size: 200%;
+        text-align: center;
+        height: 65vh;
+    }
+    header{
+        background-size: 330%;
+    }
+    .row {
+        display: block;
+        align-items: wrap;
+    }
+    .image-container {
+        display: block;
+        justify-content: space-between;
+        align-items: wrap;
+    }
+    #hashira{
+        align-items: center;
+        flex-direction: column;
+    }
+    #hashira1{
+        align-items: center;
+        flex-direction: column;
+    }
+    #hashira2{
+        align-items: center;
+        flex-direction: column;
+    }
+    #playbtn {
+        font-size: 60px;
+    }
+
+}

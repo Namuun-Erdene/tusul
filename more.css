@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    font-family: 'New Rocker', cursive;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'New Rocker', cursive;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 40px;
+}
+.text3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'New Rocker', cursive;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 80px auto;
+}
+.container h2{
+    padding: 50px;
+    color: white;
+    font-size: 44px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 500px;
+}
+.video-player{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #ffffff;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+}
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width: 150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: black;
+    line-height: 22px;
+    font-size: 15px;
+}
+/*Media*/
+@media only screen and  (min-width: 280px) and (max-width: 991px){
+    .tab-links.active-link::after{
+        width: 20%;
+    }
+    .text1{
+        width: auto;
+    }
+    .text3{
+        display: block;
+        justify-content: space-evenly;
+        background-size: 200%;
+        text-align: right;
+        height: 65vh;
+    }
+    .row {
+        display: block;
+        align-items: wrap;
+    }
+    .video-player{
+        float: left;
+    } 
+    p{
+        font-size: 20px;
+    }
+}
